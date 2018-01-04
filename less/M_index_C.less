@@ -1,0 +1,189 @@
+@charset"utf-8";
+@cl:#009944;
+.tr(@s){
+    transition:all @s ease;
+    -moz-transition:all @s ease;
+    -webkit-transition:all @s ease; 
+    -o-transition:all @s ease;
+}
+.box-size(){
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+body,ul,li,p,button,textarea,input,h1,h2,h3,figure,figcaption,dl,dt,dd{
+    margin:0;
+    padding:0;
+    font-family: "微软雅黑", "Microsoft YaHei";
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased; /*chrome、safari*/
+    -moz-osx-font-smoothing: grayscale;/*firefox*/
+}
+body{
+    font-size:14px;
+    color:#333;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}
+img{
+    display:block;
+    max-width:100%;
+}
+p{
+    font-size:.66rem;
+    color:#333;
+    line-height:1.4;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    visibility:hidden;
+    clear: both;
+    height:0;
+    font-size: 0;
+}
+.lddp:after{
+    content:"";
+    display:inline-block;
+    line-height: 0;
+    height:0;
+    font-size: 0;
+    width:100%;
+}
+
+body{
+    max-width:10.8rem;
+    margin:0 auto;
+}
+.wrap{
+    width:9.6rem;
+    margin:0 auto;
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 524379 */
+  src: url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.eot');
+  src: url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/************************
+ 头部 
+ ************************/
+ .header{
+    .hd-top{
+        height:2rem;
+    }
+    .hd-logo{
+        float: left;
+        margin-top:.52rem;
+        width:3.24rem;
+        a{
+            display:block;
+        }
+    }
+    .hd-eng{
+        float:right;
+        a{
+            display:block;
+            width:2.3rem;
+            height:.58rem;
+            line-height:.58rem;
+            border:.02rem solid #adadad;
+            color:#adadad;
+            text-align: center;
+            margin-top:.72rem;
+            font-size:.4rem;
+        }
+    }
+    .hd-nav{
+        li{
+            float: left;
+            width:25%;
+            background-color:@cl;
+            .box-size();
+            border-right:1px solid #fff;
+            border-bottom:1px solid #fff;
+        }
+        li:nth-child(4n){
+            border-right: none;
+        }
+        li:nth-last-child(-n+4){
+            border-bottom: none;
+        }
+        a{
+            display:block;
+            line-height: 1.12rem;
+            text-align: center;
+            color:#fff;
+            font-size: .4rem;
+        }
+    }
+ }
+
+
+/**************************
+    主体
+******************************/
+.main{
+    .item-tit{
+        font-size:.56rem;
+        text-align: center;
+        color:@cl;
+        padding:.7rem 0 .46rem;
+    }
+    .item-txt{
+        font-size:.3rem;
+        text-align: center;
+        color:#9c9b9a;
+        line-height:.66rem;
+    }
+}
+
+ /***************
+    banner
+*****************/
+.main-banner{
+    .swiper-pagination-bullet{
+        width:.2rem;
+        height:.2rem;
+        border: 999px;
+    }
+    .swiper-container{
+        width:100%;
+    }
+    .swiper-slide{
+        width:100%;
+        img{
+            width:100%;
+        }
+    }
+}
+
+.main-about{
+    .txt-box{
+        background:url(../M_image/mab-bg.jpg) center top no-repeat;
+        background-size:9.6rem;
+        p{
+            font-size:.36rem;
+            padding:1.2rem .7rem 0;
+        }
+    }
+}

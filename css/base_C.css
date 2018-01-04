@@ -1,0 +1,261 @@
+@charset "utf-8";
+body,
+ul,
+li,
+p,
+button,
+textarea,
+input,
+h1,
+h2,
+h3,
+figure,
+figcaption,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑", "Microsoft YaHei";
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  /*chrome、safari*/
+  -moz-osx-font-smoothing: grayscale;
+  /*firefox*/
+}
+body {
+  font-size: 14px;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+.lddp:after {
+  content: "";
+  display: inline-block;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+  width: 100%;
+}
+body {
+  min-width: 1200px;
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.eot');
+  src: url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.eot?#iefix') format('embedded-opentype'), url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.woff') format('woff'), url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.ttf') format('truetype'), url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.svg#iconfont') format('svg');
+  
+  /* project id 524379 */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 头部 */
+.ico-fz:before {
+  content: "\e628";
+}
+.ico-dh:before {
+  content: "\e62b";
+}
+/* 首页 */
+.ico-jh:before {
+  content: "\e62d";
+}
+/* 分页 */
+.ico-pdh:before {
+  content: "\e795";
+}
+/* 联系 */
+.ico-csj:before {
+  content: "\e607";
+}
+.ico-cdaoh:before {
+  content: "\e623";
+}
+.ico-ccz:before {
+  content: "\e64f";
+}
+/* 弹框关闭 */
+.ico-tk:before {
+  content: "\e639";
+}
+/* 导航置顶样式 */
+.hd-fixed-top {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  background-color: inherit;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hd-fixed-fix {
+  position: fixed;
+}
+/******************************
+    头部
+********************************/
+.header .hd-top p {
+  color: #9b9b9b;
+  line-height: 60px;
+}
+.header .top-l i {
+  color: #009944;
+  margin-right: 6px;
+}
+.header .top-r {
+  float: right;
+}
+.header .top-r i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.header .top-r span {
+  font-size: 16px;
+}
+.header .hd-bottom {
+  background-color: #009944;
+  height: 62px;
+}
+.header .hd-logo {
+  font-size: 0;
+}
+.header .hd-logo a {
+  display: block;
+}
+.header .hd-nav {
+  float: right;
+}
+.header .hd-nav li {
+  float: left;
+}
+.header .hd-nav a {
+  display: block;
+  text-align: center;
+  width: 120px;
+  line-height: 62px;
+  color: #fff;
+}
+.header .hd-nav .active,
+.header .hd-nav li:hover {
+  background-color: #fff;
+}
+.header .hd-nav .active a,
+.header .hd-nav li:hover a {
+  color: #009944;
+}
+/*****************
+    尾部
+********************/
+.footer {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+.footer p {
+  text-align: center;
+  color: #969696;
+}
+.footer p a {
+  margin: 0 10px;
+  color: inherit;
+}
+.footer p a:hover {
+  color: #009944;
+}
+/****************************
+    新闻菜单
+******************************/
+.news-menu {
+  margin-top: 60px;
+  min-height: 442px;
+}
+.news-menu .n-item {
+  min-height: 127px;
+}
+.news-menu .n-item a {
+  display: block;
+  overflow: hidden;
+  margin: 0 20px 30px;
+  border-bottom: 1px solid #fff;
+}
+.news-menu .n-item .n-l {
+  float: left;
+  width: 466px;
+  height: 126px;
+  overflow: hidden;
+}
+.news-menu .n-item .n-l img {
+  width: 100%;
+  display: block;
+}
+.news-menu .n-item .n-r {
+  float: right;
+  width: 56%;
+  margin-top: 20px;
+}
+.news-menu .n-item .n-tit {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+  width: 96%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.news-menu .n-item .n-txt {
+  font-size: 14px;
+  color: #fff;
+  line-height: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.news-menu .n-item a:hover .n-tit {
+  color: #009944;
+  margin-left: 10px;
+}
+/********************
+主体
+********************/
+.item-tit {
+  font-size: 36px;
+  text-align: center;
+  padding: 50px 0 20px;
+}
+.item-tit span {
+  color: #009944;
+}
+.item-txt {
+  text-align: center;
+  line-height: 30px;
+}

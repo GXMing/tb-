@@ -1,0 +1,511 @@
+@charset "utf-8";
+/********************
+ banner 
+ *****************/
+.main-banner .swiper-container {
+  width: 100%;
+}
+.main-banner .swiper-slide {
+  width: 100%;
+}
+.main-banner .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/*************************
+    关于德茂森
+***************************/
+.main-about .txt-box {
+  background-color: #313131;
+  padding-bottom: 150px;
+}
+.main-about .item-tit {
+  color: #fff;
+}
+.main-about .item-txt {
+  color: #fff;
+}
+.main-about .mab-bottom {
+  background-color: #009944;
+  height: 500px;
+  box-sizing: border-box;
+  margin-top: -70px;
+  padding: 100px 56px 60px 56px;
+}
+.main-about .mab-bottom img {
+  float: right;
+  margin-top: -160px;
+}
+.main-about .mab-bottom .txt2 {
+  color: #fff;
+  line-height: 34px;
+  width: 474px;
+}
+.main-about .mab-bottom .more {
+  display: block;
+  width: 148px;
+  border: 1px solid #fff;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 56px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.main-about .mab-bottom .more:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/**********************
+    我们的品牌
+**********************/
+.main-brand .mb-menu {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.main-brand .mb-item {
+  float: left;
+  position: relative;
+}
+.main-brand .mb-item a {
+  display: block;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.main-brand .mb-item .mb-img {
+  transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+}
+.main-brand .mb-item .mb-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.main-brand .mb-item i {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  bottom: 68px;
+  left: 50%;
+  font-size: 40px;
+  margin-left: -22px;
+  transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -webkit-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+}
+.main-brand .mb-item a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(88, 87, 87, 0.22);
+  z-index: 2;
+}
+.main-brand .mb-item a:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid #fff;
+  z-index: 2;
+}
+.main-brand .mb-item:nth-child(2) {
+  float: right;
+}
+.main-brand .mb-item::after,
+.main-brand .mb-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  margin: 20px;
+  box-shadow: inset 0 0 0 2px #fff;
+  animation: clipMe 8s linear infinite;
+}
+.main-brand .mb-item::before {
+  content: "";
+  animation-delay: -4s;
+}
+@keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0px, 548px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 392px, 0px);
+  }
+  50% {
+    clip: rect(392px, 548px, 392px, 0px);
+  }
+  75% {
+    clip: rect(0px, 548px, 392px, 548px);
+  }
+}
+.main-brand .mb-item:hover a:after {
+  display: none;
+}
+.main-brand .mb-item:hover i {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.main-brand .mb-item:hover .mb-img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/**************************
+ 我们的优势
+*************************/
+.main-youshi {
+  background: url(../image/mys-bg.jpg) center no-repeat;
+  padding: 120px 0 104px;
+}
+.main-youshi .ys-menu {
+  margin-top: 84px;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.main-youshi .ys-menu .youshi-item {
+  float: left;
+  width: 268px;
+  height: 268px;
+  border-radius: 999px;
+  margin: 0 16px;
+  cursor: default;
+  overflow: hidden;
+  position: relative;
+}
+.main-youshi .ys-menu .img-box {
+  position: relative;
+}
+.main-youshi .ys-menu .img-box img {
+  display: block;
+  width: 100%;
+}
+.main-youshi .ys-menu .img-box:before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  z-index: 3;
+  border-radius: 999px;
+  border: 2px solid #fff;
+}
+.main-youshi .ys-menu .img-box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #169cbe;
+  opacity: 0.54;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.main-youshi .ys-menu .txt-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  font-size: 0;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+.main-youshi .ys-menu .txt-box .tit {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 268px;
+  z-index: 3;
+}
+.main-youshi .ys-menu .hov-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 4;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.main-youshi .ys-menu .hov-box .tit2 {
+  font-size: 24px;
+}
+.main-youshi .ys-menu .hov-box .txt {
+  font-size: 16px;
+  line-height: 36px;
+}
+.main-youshi .ys-menu .hov-box .in-box {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-youshi .ys-menu .hov-box:after {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-youshi .ys-menu .youshi-item:nth-child(2) .img-box:after {
+  background-color: #009944;
+}
+.main-youshi .ys-menu .youshi-item:nth-child(3) .img-box:after {
+  background-color: #cfa447;
+}
+.main-youshi .ys-menu .youshi-item:nth-child(4) .img-box:after {
+  background-color: #c64d43;
+}
+.main-youshi .ys-menu .youshi-item:hover .img-box:after {
+  opacity: 1;
+}
+.main-youshi .ys-menu .youshi-item:hover .img-box:before {
+  border-style: dashed;
+  animation: xzy 16s linear infinite;
+}
+.main-youshi .ys-menu .youshi-item:hover .txt-box {
+  opacity: 0;
+}
+.main-youshi .ys-menu .youshi-item:hover .hov-box {
+  opacity: 1;
+}
+@keyframes xzy {
+  0%,
+  100% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+/* 最新资讯 */
+.main-news {
+  position: relative;
+  padding: 20px 0 34px;
+  overflow: hidden;
+  background-color: rgba(41, 98, 40, 0.84);
+}
+.main-news .mn-box {
+  position: relative;
+  z-index: 2;
+}
+.main-news .item-tit,
+.main-news .item-txt {
+  color: #fff;
+}
+.main-news .more {
+  text-align: center;
+}
+.main-news .more a {
+  color: #fff;
+}
+.main-news .more a:hover {
+  color: #009944;
+}
+@keyframes bgsize {
+  0%,
+  100% {
+    -webkit-transform: translate(0) scale(1);
+    -moz-transform: translate(0) scale(1);
+    -ms-transform: translate(0) scale(1);
+    -o-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(4%, 4%) scale(1.08);
+    -moz-transform: translate(4%, 4%) scale(1.08);
+    -ms-transform: translate(4%, 4%) scale(1.08);
+    -o-transform: translate(4%, 4%) scale(1.08);
+    transform: translate(4%, 4%) scale(1.08);
+  }
+}
+.main-news:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../image/mn-bg.jpg) center no-repeat;
+  background-size: cover;
+  animation: bgsize 16s linear infinite;
+}
+.main-message {
+  padding-bottom: 40px;
+}
+.main-message .form {
+  position: relative;
+  margin-top: 44px;
+}
+.main-message .form input {
+  width: 294px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 14px;
+  color: #000;
+  text-indent: 15px;
+  border: none;
+  background-color: #eee;
+  border-right: 12px;
+  outline: none;
+  margin-right: 15px;
+}
+.main-message .form textarea {
+  width: 918px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 14px;
+  color: #000;
+  text-indent: 15px;
+  border: none;
+  background-color: #eee;
+  border-right: 12px;
+  outline: none;
+  margin-top: 15px;
+  resize: none;
+}
+.main-message .form button {
+  display: block;
+  cursor: pointer;
+  width: 258px;
+  height: 135px;
+  line-height: 135px;
+  font-size: 26px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: #000;
+}
+.main-message .form button:hover {
+  background-color: #009944;
+}
+/**************************************
+    aos 动画修改
+****************************************/
+.main-about {
+  overflow: hidden;
+}
+.main-youshi {
+  overflow: hidden;
+}
+[aos=fade-ab-right] {
+  -webkit-transform: translate(-400px, 0);
+  -ms-transform: translate(-400px, 0);
+  transform: translate(-400px, 0);
+}
+[aos=fade-ab-right] img {
+  -webkit-transform: translate(800px, -400px);
+  -moz-transform: translate(800px, -400px);
+  -ms-transform: translate(800px, -400px);
+  -o-transform: translate(800px, -400px);
+  transform: translate(800px, -400px);
+}
+[aos=fade-right-more] {
+  -webkit-transform: translate(-800px, 0);
+  -ms-transform: translate(-800px, 0);
+  transform: translate(-800px, 0);
+}
+[aos=fade-left-more] {
+  -webkit-transform: translate(800px, 0);
+  -ms-transform: translate(800px, 0);
+  transform: translate(800px, 0);
+}
+[aos=slide-morerm] {
+  -webkit-transform: translate(700px, 0);
+  -ms-transform: translate(700px, 0);
+  transform: translate(700px, 0);
+  -webkit-transition-duration: 1.6s;
+  transition-duration: 1.6s;
+}
+[aos=slide-morer] {
+  -webkit-transform: translate(400px, 0);
+  -ms-transform: translate(400px, 0);
+  transform: translate(400px, 0);
+}
+[aos=slide-morelm] {
+  -webkit-transform: translate(-700px, 0);
+  -ms-transform: translate(-700px, 0);
+  transform: translate(-700px, 0);
+}
+[aos=slide-morel] {
+  -webkit-transform: translate(-400px, 0);
+  -ms-transform: translate(-400px, 0);
+  transform: translate(-400px, 0);
+}
+[aos=fade-right-more].aos-animate,
+[aos=fade-left-more].aos-animate,
+[aos=fade-ab-right].aos-animate,
+[aos=fade-ab-right].aos-animate img,
+[aos=slide-morerm].aos-animate,
+[aos=slide-morer].aos-animate,
+[aos=slide-morelm].aos-animate,
+[aos=slide-morel].aos-animate {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+/***************************
+    英文修改部分
+*********************************/
+.main-youshi .ys-menu-E .txt-box .tit {
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.main-youshi .ys-menu-E .hov-box .tit2 {
+  text-transform: capitalize;
+}

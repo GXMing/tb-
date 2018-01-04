@@ -1,0 +1,274 @@
+@charset"utf-8";
+
+@cl:#009944;
+.tr(@s){
+    transition:all @s ease;
+    -moz-transition:all @s ease;
+    -webkit-transition:all @s ease; 
+    -o-transition:all @s ease;
+}
+.box-size(){
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+body,ul,li,p,button,textarea,input,h1,h2,h3,figure,figcaption,dl,dt,dd{
+    margin:0;
+    padding:0;
+    font-family: "微软雅黑", "Microsoft YaHei";
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased; /*chrome、safari*/
+    -moz-osx-font-smoothing: grayscale;/*firefox*/
+}
+body{
+    font-size:14px;
+    color:#333;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    visibility:hidden;
+    clear: both;
+    height:0;
+    font-size: 0;
+}
+.lddp:after{
+    content:"";
+    display:inline-block;
+    line-height: 0;
+    height:0;
+    font-size: 0;
+    width:100%;
+}
+
+body{
+    min-width: 1200px;
+}
+.wrap{
+    width:1200px;
+    margin:0 auto;
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 524379 */
+  src: url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.eot');
+  src: url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_524379_sgoz9imgq1c0izfr.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 头部 */
+.ico-fz:before{
+    content:"\e628";
+}
+.ico-dh:before{
+    content:"\e62b";
+}
+/* 首页 */
+.ico-jh:before{
+    content:"\e62d";
+}
+/* 分页 */
+.ico-pdh:before{
+    content:"\e795";
+}
+/* 联系 */
+.ico-csj:before{
+    content:"\e607";
+}
+.ico-cdaoh:before{
+    content:"\e623";
+}
+.ico-ccz:before{
+    content:"\e64f";
+}
+/* 弹框关闭 */
+.ico-tk:before{
+    content:"\e639";
+}
+
+/* 导航置顶样式 */
+.hd-fixed-top {
+  width: 100%;
+  position:relative;
+  top:0;
+  left:0;
+  z-index:90;
+  background-color: inherit;
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+       -o-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.hd-fixed-fix{
+    position:fixed;
+}
+
+/******************************
+    头部
+********************************/
+.header{
+    .hd-top{
+        p{
+            color:#9b9b9b;
+            line-height: 60px;
+        }
+    }
+    .top-l{
+        i{
+            color:@cl;
+            margin-right: 6px;
+        }
+    }
+    .top-r{
+        float:right;
+        i{
+            font-size:20px;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+        span{
+            font-size: 16px;
+        }
+    }
+    .hd-bottom{
+        background-color: @cl;
+        height:62px;
+    }
+    .hd-logo{
+        font-size:0;
+        a{
+            display:block;
+        }
+    }
+    .hd-nav{
+        float:right;
+        li{
+            float:left;
+        }
+        a{
+            display:block;
+            text-align: center;
+            width:120px;
+            line-height:62px;
+            color:#fff;
+        }
+        .active,li:hover{
+            background-color:#fff;
+            a{
+                color:@cl;
+            }
+        }
+    }
+}
+
+
+/*****************
+    尾部
+********************/
+.footer{
+    padding:20px 0;
+    border-top: 1px solid #ccc;
+    p{
+        text-align: center;
+        color:#969696;
+        a{
+            margin:0 10px;
+            color:inherit;
+        }
+        a:hover{
+            color:@cl;
+        }
+    }
+}
+
+/****************************
+    新闻菜单
+******************************/
+.news-menu{
+    margin-top: 60px;
+    min-height:442px;
+    .n-item{
+        min-height: 127px;
+        a{
+            display:block;
+            overflow:hidden;
+            margin:0 20px 30px;
+            border-bottom: 1px solid #fff;
+        }
+        .n-l{
+            float:left;
+            width:466px;
+            height:126px;
+            overflow:hidden;
+            img{
+                width:100%;
+                display:block;
+            }
+        }
+        .n-r{
+            float:right;
+            width:56%;
+            margin-top: 20px;
+        }
+        .n-tit{
+            font-size:16px;
+            color:#fff;
+            margin-bottom:8px;
+            width:96%;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            .tr(.3s)
+        }
+        .n-txt{
+            font-size:14px;
+            color:#fff;
+            line-height:30px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        a:hover{
+            .n-tit{
+                color:@cl;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+/********************
+主体
+********************/
+.item-tit{
+    font-size:36px;
+    text-align: center;
+    padding: 50px 0 20px;
+    span{
+        color:@cl;
+    }
+}
+.item-txt{
+    text-align: center;
+    line-height: 30px;
+}
